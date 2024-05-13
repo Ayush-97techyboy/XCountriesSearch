@@ -39,21 +39,21 @@ export default function XCountriesSearch() {
   }, [searchTerm, countries]);
 
   return (
-    <div className={styles.countryCard}>
-      {/* <div> */}
+    <div className={styles.mainDiv}>
+      <div className={styles.inpH}>
       <input
           type="text"
           placeholder="Search for a country..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className={styles.countryCard}
+          className={styles.inp}
         />
-      {/* </div> */}
+      </div>
       <div className={styles.AppHead}>
         {/* <h1>Country Search by Initials</h1> */}
         {/* <button onClick={handleSearch}>Search</button> */}
       </div>
-      <div className={styles.countryCard}>
+      <div className={styles.country}>
         {filteredCountries.map((country) => (
           <Country
             key={country.cca3}
