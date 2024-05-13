@@ -23,7 +23,10 @@
 .inp {
     display: flex;
     flex-direction: row;
+    color: rgb(14, 15, 13);
     background-color: aliceblue;
+    font-weight: bolder;
+    font-size: larger;
     margin-bottom: 50px;
     margin-top: 0px;
     padding: 1em;
