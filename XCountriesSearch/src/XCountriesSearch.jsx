@@ -46,14 +46,14 @@ export default function XCountriesSearch() {
           placeholder="Search for a country..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className={styles.inp}
+          className={styles.countryCard}
         />
       </div>
       <div className={styles.AppHead}>
         {/* <h1>Country Search by Initials</h1> */}
         {/* <button onClick={handleSearch}>Search</button> */}
       </div>
-      <div className={styles.country}>
+      <div className={styles.countryCard}>
         {filteredCountries.map((country) => (
           <Country
             key={country.cca3}

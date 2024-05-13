@@ -35,7 +35,7 @@
     position: fixed;
 }
 
-.country {
+.countryCard {
   display: flex;
   justify-content: center;
   align-items: center;
